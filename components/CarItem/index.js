@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View, ImageBackground } from "react-native";
 import React from "react";
-import styles from "./styles";
+import { View, Text, ImageBackground } from "react-native";
 import StyledButton from "../StyledButton";
+import styles from "./styles";
 
 const CarItem = (props) => {
-  const { name, tagline, image, taglineCTA } = props;
+  const { name, tagline, taglineCTA, image } = props.car;
 
   return (
     <View style={styles.carContainer}>
@@ -12,9 +12,8 @@ const CarItem = (props) => {
 
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>
-        <Text style={styles.subTitle}>
-          {tagline}&nbsp;
-          <Text style={styles.subtitleCTA}>{taglineCTA}</Text>
+        <Text style={styles.subtitle}>
+          {tagline} <Text style={styles.subtitleCTA}>{taglineCTA}</Text>
         </Text>
       </View>
 
@@ -26,6 +25,7 @@ const CarItem = (props) => {
             console.warn("Custom Order was pressed");
           }}
         />
+
         <StyledButton
           type="secondary"
           content={"Existing Inventory"}
@@ -39,5 +39,3 @@ const CarItem = (props) => {
 };
 
 export default CarItem;
-
-//rnfce
