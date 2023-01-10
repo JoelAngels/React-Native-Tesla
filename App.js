@@ -8,7 +8,6 @@ export default function App() {
       {/* Rendering A Car Item */}
       <Header />
       <CarList />
-
       <StatusBar style="auto" />
     </View>
   );

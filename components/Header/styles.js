@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 50,
     zIndex: 100,
-    flexDirection: "row",
+    flexDirection: "row", //one was up and one was down but we set it to a row
     justifyContent: "space-between",
     width: "100%",
     paddingHorizontal: 20,
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 100,
     height: 20,
-    resizeMode: "contain",
+    resizeMode: "contain", //shows the logo in full
   },
   menu: {
     width: 25,
